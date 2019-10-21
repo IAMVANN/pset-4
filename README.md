@@ -48,9 +48,7 @@ Work through these exercises on your own. Experiment, make mistakes, ask questio
 
 Prompt the user to enter two integers. The first integer is a lower bound, and the second integer is an upper bound. Compute the sum of all even integers between the lower and upper bounds, including the bounds themselves.
 
-Your code needs to support numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`]. Numbers outside of this range and non-numeric values are invalid. Prompt the user repeatedly until you receive a supported value.
-
-`Number.MIN_SAFE_INTEGER` and `Number.MAX_SAFE_INTEGER` are constants built into the `Number` object. You'll have to do a little research to figure out what values they represent.
+Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
 
 ![Exercise 1 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/sum.png)
 
@@ -62,9 +60,7 @@ Your code needs to support numbers in the range [`Number.MIN_SAFE_INTEGER`, `Num
 
 Prompt the user to enter a positive integer. Without using any `String` methods, print the digits of this integer in reverse order. Separate each digit with a comma.
 
-Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`]. Numbers outside of this range and non-numeric values are invalid. Prompt the user repeatedly until you receive a supported value.
-
-`Number.MIN_SAFE_INTEGER` and `Number.MAX_SAFE_INTEGER` are constants built into the `Number` object. You'll have to do a little research to figure out what values they represent.
+Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
 
 ![Exercise 2 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/reverse.png)
 
