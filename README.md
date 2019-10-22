@@ -68,13 +68,152 @@ Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, 
 * The use of `String` methods to solve this problem is prohibited.
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
+### Exercise 3
+
+Prompt the user to enter a positive integer. Without using any `String` methods, compute the sum of all of the odd digits in the integer.
+
+Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+![Exercise 3 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/odd.png)
+
+* Your code must be written in a file named `odd.js`.
+* The use of `String` methods to solve this problem is prohibited.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 4
+
+Prompt the user to enter a series of non-negative integers. When the user enters a negative integer, you can assume he or she is done entering values. Discounting the negative integer, what is the average of the values entered?
+
+Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+![Exercise 4 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/average.png)
+
+* Your code must be written in a file named `average.js`.
+* Round the result to three decimals, and format it with separating commas (if needed).
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 5
+
+Prompt the user to enter a non-negative integer. Is this number prime?
+
+Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+There are two possible outputs.
+* `Prime.`
+* `Not prime.`
+
+![Exercise 5 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/prime.png)
+
+* Your code must be written in a file named `prime.js`.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 6
+
+Prompt the user to enter a positive integer. If the integer the user enters is called `n`, what is the `n`th Fibonacci number?
+
+Your code needs to support all numbers in the range [`0`, `78`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+![Exercise 6 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/fibonacci.png)
+
+* Your code must be written in a file named `fibonacci.js`.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 7
+
+Prompt the user to enter a positive integer. What are its factors? Take note of the order in which factors are printed, and whether or not factors are repeated.
+
+Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+![Exercise 7 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/factors.png)
+
+* Your code must be written in a file named `factors.js`.
+* Print factors in paired sequences (smallest, largest, second smallest, second largest, etc.).
+* Print a factor only once.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 8
+
+Prompt the user to enter an integer. Print a Super Mario-style half-pyramid of the specified height.
+
+Your code needs to support all numbers in the range [`1`, `24`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+![Exercise 8 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/mario.png)
+
+* Your code must be written in a file named `mario.js`.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 9
+
+Prompt the user to enter an integer. Print a Super Mario-style full pyramid of the specified height.
+
+Your code needs to support all numbers in the range [`1`, `24`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+
+![Exercise 9 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/luigi.png)
+
+* Your code must be written in a file named `luigi.js`.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
+### Exercise 10
+
+Prompt the user to enter a credit card number (not a real one!). According to [Luhn's algorithm](https://www.geeksforgeeks.org/luhn-algorithm/), is the credit card number valid?
+
+Luhn's algorithm works as follows.
+* Multiply every other digit of the card number by two, starting with the second-to-last digit.
+* Add the products of those digits.
+* Add the digits that were not initially multiplied by two.
+* Add the sums from Steps 2 and 3.
+* If the last digit of the sum from Step 4 is a zero, then the card number is valid.
+  - American Express uses 15-digit numbers, starting with 34 or 37.
+  - Mastercard uses 16-digit numbers, starting with 51, 52, 53, 54, or 55.
+  - Visa uses 13- or 16-digit numbers, starting with 4.
+
+Here's an example using an American Express card: 378282246310005.
+
+First, you should identify the digits to be multiplied: every other digit, starting with the second-to-last digit.
+```
+3 7 8 2 8 2 2 4 6 3 1 0 0 0 5
+```
+Now, multiply these digits by two.
+```
+7 x 2 + 2 x 2 + 2 x 2 + 4 x 2 + 3 x 2 + 0 x 2 + 0 x 2
+```
+Now, you have the products.
+```
+14 + 4 + 4 + 8 + 6 + 0 + 0
+```
+You need to add the digits of these products (not the products themselves).
+```
+1 + 4 + 4 + 4 + 8 + 6 + 0 + 0 = 27
+```
+Next, add that sum (i.e., 27) to the sum of the digits that weren't multiplied by two.
+```
+27 + 3 + 8 + 8 + 2 + 6 + 1 + 0 + 5 = 60
+```
+Since the checksum ends in in a zero, then the card number is valid. Because the original number is 15 digits and starts with a 37, it is an Amex.
+
+There are four possible outputs.
+* `Amex.`
+* `Mastercard.`
+* `Visa.`
+* `Invalid.`
+
+Here a few examples you can use for testing.
+* `378282246310005` and `371449635398431` should verify as `Amex`.
+* `5555555555554444` and `5105105105105100` should verify as `Mastercard`.
+* `4111111111111111` and `4012888888881881` should verify as `Visa`.
+
+![Exercise 10 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/credit.png)
+
+* Your code must be written in a file named `credit.js`.
+* Your prompt and message must be grammatically correct and match mine **exactly**.
+
 ## Deadline
 
 Please read very carefully. Historically, most students lose points on problem sets for simply failing to read the instructions and requirements.
 
-* November 6, 2019, at 11:59pm.
+* November 24, 2019, at 11:59pm.
 
-If you submit your problem set at midnight (i.e., November 7, 2019, at 12:00am), it is considered **late**!
+If you submit your problem set at midnight (i.e., November 25, 2019, at 12:00am), it is considered **late**!
 
 ### Submission Requirements
 
