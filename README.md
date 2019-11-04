@@ -48,7 +48,7 @@ Work through these exercises on your own. Experiment, make mistakes, ask questio
 
 Prompt the user to enter two integers. The first integer is a lower bound, and the second integer is an upper bound. Compute the sum of all even integers between the lower and upper bounds, including the bounds themselves.
 
-Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. The lower bound, of course, must be less than the upper bound. Continuously prompt the user until you receive a value in the supported range.
 
 ![Exercise 1 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/sum.png)
 
