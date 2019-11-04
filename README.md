@@ -53,7 +53,7 @@ Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, 
 ![Exercise 1 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/sum.png)
 
 * Your code must be written in a file named `sum.js`.
-* Use `const` variables to represent the lower and upper bounds.
+* Use `let` variables to represent the lower and upper bounds.
 * Your message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 2
