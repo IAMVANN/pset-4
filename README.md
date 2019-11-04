@@ -60,7 +60,7 @@ Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, 
 
 Prompt the user to enter a positive integer. Without using any `String` methods, print the digits of this integer in reverse order. Separate each digit with a comma.
 
-Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
 
 ![Exercise 2 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/reverse.png)
 
