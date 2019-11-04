@@ -53,7 +53,6 @@ Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, 
 ![Exercise 1 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/sum.png)
 
 * Your code must be written in a file named `sum.js`.
-* Use `let` variables to represent the lower and upper bounds.
 * Your message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 2
@@ -65,7 +64,7 @@ Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEG
 ![Exercise 2 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/reverse.png)
 
 * Your code must be written in a file named `reverse.js`.
-* The use of `String` methods to solve this problem is prohibited.
+* The use of `String` methods to solve this problem is strictly prohibited.
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 3
@@ -77,7 +76,7 @@ Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, 
 ![Exercise 3 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/odd.png)
 
 * Your code must be written in a file named `odd.js`.
-* The use of `String` methods to solve this problem is prohibited.
+* The use of `String` methods to solve this problem is strictly prohibited.
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 4
@@ -129,7 +128,7 @@ Your code needs to support all numbers in the range [`1`, `Number.MAX_SAFE_INTEG
 
 * Your code must be written in a file named `factors.js`.
 * Print factors in paired sequences (smallest, largest, second smallest, second largest, etc.).
-* Print a factor only once.
+* Print each factor only once (i.e., no duplicatin factors for perfect squares).
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 8
