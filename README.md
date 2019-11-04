@@ -84,7 +84,7 @@ Your code needs to support all numbers in the range [`Number.MIN_SAFE_INTEGER`, 
 
 Prompt the user to enter a series of non-negative integers. When the user enters a negative integer, you can assume he or she is done entering values. Discounting the negative integer, what is the average of the values entered?
 
-Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all numbers in the range [`0`, `Number.MAX_SAFE_INTEGER`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range (meaning invalid values should be ignored entirely).
 
 ![Exercise 4 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/average.png)
 
