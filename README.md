@@ -116,6 +116,7 @@ Your code needs to support all numbers in the range [`0`, `78`], and should reje
 ![Exercise 6 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/fibonacci.png)
 
 * Your code must be written in a file named `fibonacci.js`.
+* Format the result with separating commas (if needed).
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
 ### Exercise 7
