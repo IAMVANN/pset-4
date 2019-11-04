@@ -111,7 +111,7 @@ There are two possible outputs.
 
 Prompt the user to enter a positive integer. If the integer the user enters is called `n`, what is the `n`th Fibonacci number?
 
-Your code needs to support all numbers in the range [`0`, `78`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
+Your code needs to support all numbers in the range [`1`, `78`], and should reject anything not in this range. Continuously prompt the user until you receive a value in the supported range.
 
 ![Exercise 6 Output](https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/fibonacci.png)
 
