@@ -207,6 +207,21 @@ Here a few examples you can use for testing.
 * Your code must be written in a file named `credit.js`.
 * Your prompt and message must be grammatically correct and match mine **exactly**.
 
+## Deliverables
+
+You can run all of your problem set files in a single shot using the following command. Make sure you're in your `src` directory when you do so.
+```
+node sum.js; node reverse.js; node odd.js; node average.js; node prime.js; node fibonacci.js; node factors.js; node mario.js; node luigi.js; node credit.js
+```
+
+Pay close attention to this output because your code will be graded against it. There is exactly one line break at the beginning and end of the output. THere are exactly two line breaks between exercises.
+
+When you run the chained command and enter the same values, your output should match mine exactly.
+
+<span>
+  <img src="https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/deliverable-1.png" alt="Problem Set 4 Output" width="49.75%"/> <img src="https://github.com/ap-principles-ucvts/pset-4-skeleton/blob/master/images/deliverable-2.png" alt="Problem Set 4 Output" width="49.75%"/>
+</span>
+
 ## Deadline
 
 Please read very carefully. Historically, most students lose points on problem sets for simply failing to read the instructions and requirements.
