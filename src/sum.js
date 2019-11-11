@@ -6,8 +6,9 @@ let upperBound;
 while(valid === false){
     lowerBound = Number(scanner.question("Lower bound: "));
     upperBound = Number(scanner.question("Upper bound: "));
-    if(lowerBound >= upperBound || upperBound > Number.MAX_SAFE_INTEGER || lowerBound < Number.MIN_SAFE_INTEGER ||
-      Number.isNaN(lowerBound) == true || Number.isNaN(upperBound) == true){
+    if(lowerBound >= upperBound || Number.isSafeInteger(lowerBound) == false ||
+      Number.isSafeInteger(upperBound) == false || Number.isNaN(lowerBound) == true ||
+        Number.isNaN(upperBound) == true ){
         valid = false;
     } else {
         valid = true;
