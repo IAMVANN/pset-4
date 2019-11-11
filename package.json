@@ -2,6 +2,6 @@
   "name": "pset-4-starter-code",
   "version": "1.0.0",
   "dependencies": {
-    "readline-sync": "1.4.10"
+    "readline-sync": "^1.4.10"
   }
 }
