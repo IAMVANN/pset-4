@@ -11,7 +11,7 @@ let printThis = "\n";
 let maxposition;
 while(valid === false){
     posInt = Number(scanner.question("Positive integer: "));
-    if(posInt < 1 || Number.isSafeInteger(posInt) == false || Number.isNaN(posInt) == true){
+    if(posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true){
         valid = false;
     } else {
         valid = true;
@@ -50,3 +50,4 @@ while(position >= 0){
     position--;
 }
 console.log(printThis);
+//I DID NOT FINISH. number.0 like 5.0 does not work and i need to find a way

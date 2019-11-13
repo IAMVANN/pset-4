@@ -10,7 +10,7 @@ while(valid === false){
     upperBound = Number(scanner.question("Upper bound: "));
     if(lowerBound >= upperBound || Number.isSafeInteger(lowerBound) == false ||
       Number.isSafeInteger(upperBound) == false || Number.isNaN(lowerBound) == true ||
-        Number.isNaN(upperBound) == true ){
+        Number.isNaN(upperBound) == true || String(lowerBound).include(".") == true || String(lowerbound).include(".")){
         valid = false;
     } else {
         valid = true;
