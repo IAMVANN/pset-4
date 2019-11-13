@@ -3,8 +3,10 @@ let valid = false;
 console.log();
 let lowerBound;
 let upperBound;
+let ogLowerbound
 while(valid === false){
     lowerBound = Number(scanner.question("Lower bound: "));
+    ogLowerbound = lowerBound;
     upperBound = Number(scanner.question("Upper bound: "));
     if(lowerBound >= upperBound || Number.isSafeInteger(lowerBound) == false ||
       Number.isSafeInteger(upperBound) == false || Number.isNaN(lowerBound) == true ||
@@ -16,7 +18,7 @@ while(valid === false){
 }
 let sum = 0;
 while(lowerBound <= upperBound){
-    if(lowerBound % 2 === 0){
+    if(lowerBound % 2 === 0 && lowerBound != ogLowerbound){
         sum = sum + lowerBound;
     }
     lowerBound++;
