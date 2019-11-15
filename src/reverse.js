@@ -50,3 +50,4 @@ while(position >= 0){
     position--;
 }
 console.log(printThis);
+//perhaps ARRAYS ARE NOT ALLOWED
