@@ -11,7 +11,7 @@ let printThis = "\n";
 let maxposition;
 while(valid === false){
     posInt = Number(scanner.question("Positive integer: "));
-    if(posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true){
+    if(posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true || Number.isDecimal){
         valid = false;
     } else {
         valid = true;
