@@ -50,4 +50,3 @@ while(position >= 0){
     position--;
 }
 console.log(printThis);
-//I DID NOT FINISH. number.0 like 5.0 does not work and i need to find a way
