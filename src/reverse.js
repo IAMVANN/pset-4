@@ -2,52 +2,30 @@ const scanner = require("readline-sync");
 let valid = false;
 console.log();
 let posInt;
-let numHolder = [];
 let position = 0;
 let divisor = 1;
-let divisorArray = [];
+let currentNumber;
 let positionForDiv = 0;
-let printThis = "\n";
-let maxposition;
+let printThis;
 while(valid === false){
     posInt = Number(scanner.question("Positive integer: "));
-    if(posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true || Number.isDecimal){
+    if(posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true){
         valid = false;
     } else {
         valid = true;
     }
 }
-let length = String(posInt).length;
-let lengthClone = length;
-for(length; length > 0; length--){
-    divisorArray[positionForDiv] = divisor;
-    divisor = divisor * 10;
-    if (length > 1){
-        positionForDiv++;
-    }
-}
-let currentNumber = posInt;
-while(positionForDiv >= 0){
-    numHolder[position] = (currentNumber - (currentNumber % divisorArray[positionForDiv]))
-      / divisorArray[positionForDiv];
-    currentNumber = currentNumber % divisorArray[positionForDiv];
-    if(positionForDiv == 0){
-        maxposition = position;
+let length = String(posInt).length - 1;
+let lengthMax = length;
+for(length; length >= 0; length--){
+    divisor = 10 ** length;
+    currentNumber = (posInt / divisor) - (posInt/divisor % 1);
+    console.log(posInt/divisor % 1);
+    posInt = (posInt % divisor);
+    if(length == lengthMax ){
+        printThis = currentNumber + "."
     } else {
-        position++;
+        printThis =  currentNumber + ", " + printThis;
     }
-    positionForDiv--;
-
 }
-while(position >= 0){
-
-    if(position == 0 ){
-        printThis = printThis + numHolder[position] + "."
-    } else {
-        printThis = printThis + numHolder[position] + ", ";
-    }
-    lengthClone--;
-    position--;
-}
-console.log(printThis);
-//perhaps ARRAYS ARE NOT ALLOWED
+console.log("\n" + String(printThis));
