@@ -20,7 +20,7 @@ let lengthMax = length;
 for(length; length >= 0; length--){
     divisor = 10 ** length;
     currentNumber = (posInt / divisor) - (posInt/divisor % 1);
-    console.log(posInt/divisor % 1);
+    //console.log(posInt/divisor % 1);
     posInt = (posInt % divisor);
     if(length == lengthMax ){
         printThis = currentNumber + "."
