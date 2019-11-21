@@ -12,14 +12,16 @@ while(valid === false){
 }
 let copy = posInt;
 let holder;
-for(copy; copy >= posInt/2; copy--){
+for(copy; copy >= Math.sqrt(posInt); copy--){
     if(posInt % copy == 0){
         holder = posInt / copy;
         if(copy == holder){
-            printThis += holder + ", ";
-        } else {
-            printThis += holder + ", " + copy + ", ";
+            printThis +=  ", " + holder;
+        } else if(copy == posInt){
+            printThis += holder + ", " + copy ;
+        } else{
+            printThis +=  ", " + holder + ", " + copy ;
         }
     }
 }
-console.log(printThis);
+console.log(printThis + ".");
