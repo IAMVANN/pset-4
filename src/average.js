@@ -1,15 +1,23 @@
 const scanner = require("readline-sync");
 let valid = true;
-let sum = 0;
+let sum;
 let amountOfTimes = 0;
+let stringer;
 let nonNegativeInt;
 console.log();
 while (valid == true){
-    nonNegativeInt = Number(scanner.question("Non-negative integer: "));
-    if(nonNegativeInt >= 0 && Number.isNaN(nonNegativeInt) == false && Number.isSafeInteger(nonNegativeInt) == true ){
+    nonNegativeInt = scanner.question("Non-negative integer: ");
+    var stringer = nonNegativeInt;
+    nonNegativeInt = Number(nonNegativeInt);
+    if(nonNegativeInt >= 0 && Number.isNaN(nonNegativeInt) == false && Number.isSafeInteger(nonNegativeInt) == true &&
+      stringer.includes(".") == false){
+        if(Number.isNaN(Number(sum)) == true){
+            sum = 0;
+        }
         sum = sum + nonNegativeInt;
         amountOfTimes++;
-    } else if(nonNegativeInt <= 0){
+    } else if(nonNegativeInt <= 0 && Number.isSafeInteger(nonNegativeInt) == true &&
+             Number.isNaN(Number(sum)) == false){
         valid = false;
     }
 }

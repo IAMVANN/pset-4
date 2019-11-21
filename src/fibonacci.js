@@ -2,9 +2,12 @@ const scanner = require("readline-sync");
 let valid = false;
 let positiveInt;
 console.log();
+let stringer;
 while(valid == false){
-    positiveInt = Number(scanner.question("Positive Integer: "));
-    if(Number.isSafeInteger(positiveInt) == false || Number.isNaN(positiveInt) == true){
+    stringer = scanner.question("Positive Integer: ");
+    positiveInt = Number(stringer);
+    if(Number.isSafeInteger(positiveInt) == false || Number.isNaN(positiveInt) == true ||
+      stringer.includes(".") == true){
     } else if(positiveInt >= 1 && positiveInt <=78) {
         valid = true;
     }

@@ -1,11 +1,14 @@
 const scanner = require("readline-sync");
 let posInt;
 let valid = false;
+let stringer;
 let printThis = "\n"
 console.log();
 while(valid === false){
-    posInt = Number(scanner.question("Positive integer: "));
-    if(Number.isSafeInteger(posInt) == false || Number.isNaN(posInt) == true || posInt < 1 ){
+    stringer = scanner.question("Positive integer: ");
+    posInt = Number(stringer);
+    if(Number.isSafeInteger(posInt) == false || Number.isNaN(posInt) == true || posInt < 1 ||
+      stringer.includes(".") == true ){
     } else {
         valid = true;
     }

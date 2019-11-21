@@ -3,10 +3,14 @@ let valid = false;
 let nonNegativeInt;
 let prime = true;
 let finished = false;
+let stringer
 console.log();
 while(valid == false){
-    nonNegativeInt = Number(scanner.question("Non-negative integer: "));
-    if(nonNegativeInt < 0 || Number.isSafeInteger(nonNegativeInt) == false || Number.isNaN(nonNegativeInt) == true){
+    nonNegativeInt = scanner.question("Non-negative integer: ");
+    stringer = nonNegativeInt;
+    nonNegativeInt = Number(nonNegativeInt);
+    if(nonNegativeInt < 0 || Number.isSafeInteger(nonNegativeInt) == false || Number.isNaN(nonNegativeInt) == true ||
+      stringer.includes(".") == true){
     } else {
         valid = true;
     }
