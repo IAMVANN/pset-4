@@ -7,7 +7,7 @@ let nonNegativeInt;
 console.log();
 while (valid == true){
     nonNegativeInt = scanner.question("Non-negative integer: ");
-    var stringer = nonNegativeInt;
+    stringer = nonNegativeInt;
     nonNegativeInt = Number(nonNegativeInt);
     if(nonNegativeInt >= 0 && Number.isNaN(nonNegativeInt) == false && Number.isSafeInteger(nonNegativeInt) == true &&
       stringer.includes(".") == false){

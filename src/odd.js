@@ -7,8 +7,10 @@ let divisor = 1;
 let currentNumber;
 let positionForDiv = 0;
 let sum = 0;
+let stringer;
 while(valid === false){
-    posInt = Number(scanner.question("Positive integer: "));
+    stringer = scanner.question("Positive integer: ");
+    posInt = Number(stringer);
     if(posInt < 1 || Number.isSafeInteger(posInt) == false || Number.isNaN(posInt) == true){
         valid = false;
     } else {
