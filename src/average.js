@@ -10,7 +10,7 @@ while (valid == true){
     stringer = nonNegativeInt;
     nonNegativeInt = Number(nonNegativeInt);
     if(nonNegativeInt >= 0 && Number.isNaN(nonNegativeInt) == false && Number.isSafeInteger(nonNegativeInt) == true &&
-      stringer.includes(".") == false){
+      stringer.includes(".") == false && stringer != ""){
         if(Number.isNaN(Number(sum)) == true){
             sum = 0;
         }
