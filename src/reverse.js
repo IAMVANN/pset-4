@@ -1,15 +1,15 @@
 const scanner = require("readline-sync");
 let valid = false;
-console.log();
+console.log(" ");
 let posInt;
 let position = 0;
 let divisor = 1;
 let currentNumber;
 let positionForDiv = 0;
 let printThis;
-while(valid === false){
+while (valid === false) {
     posInt = Number(scanner.question("Positive integer: "));
-    if(posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true){
+    if (posInt < 1 || Number.isSafeInteger(posInt) == false  || Number.isNaN(posInt) == true) {
         valid = false;
     } else {
         valid = true;
@@ -17,7 +17,7 @@ while(valid === false){
 }
 let length = String(posInt).length - 1;
 let lengthMax = length;
-for(length; length >= 0; length--){
+for (length; length >= 0; length--) {
     divisor = 10 ** length;
     currentNumber = (posInt / divisor) - (posInt/divisor % 1);
     /*currentNumber = (posInt / divisor) - (posInt % 1)/ divisor;
@@ -30,3 +30,4 @@ for(length; length >= 0; length--){
     }
 }
 console.log("\n" + String(printThis));
+console.log(" ");
